@@ -3,9 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hazim's Portfolio - Home</title>
+
+    <!-- Google Font: VT323 (A clean, techy, pixel-style font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <!-- Your Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Your JavaScript (defer ensures it runs after HTML is parsed) -->
+    <script src="script.js" defer></script>
 </head>
-<body>
+<body class="dark-mode"> <!-- Starts in dark mode by default -->
+
+    <!-- ======================= -->
+    <!--     MAIN NAVIGATION     -->
+    <!-- ======================= -->
+    <header class="main-header pixel-border">
+        <nav class="main-nav">
+            <div class="nav-logo">
+                <a href="index.html">[ HZ ]</a>
+            </div>
+            <ul>
+                <li><a href="index.html" class="active">[ Home ]</a></li>
+                <li><a href="projects.html">[ Projects ]</a></li>
+                <li><a href="about.html">[ About ]</a></li>
+                <li><a href="contact.html">[ Contact ]</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" class="btn-pixel">Light Mode</button>
+    </header>
+
+    <main class="container">
+
+        <!-- ======================= -->
+        <!--       HERO SECTION      -->
+        <!-- ======================= -->
+        <section class="hero-section">
+            <!-- This 'window' class is for the retro OS look -->
+            <div class="window pixel-border">
+                <div class="window-titlebar">
+                    <span>[ welcome.txt ]</span>
+                    <div class="window-buttons">
+                        <span class="window-btn">_</span>
+                        <span class="window-btn">□</span>
+                        <span class="window-btn">X</span>
+                    </div>
+                </div>
+                <div class="window-content">
+                    <h1>Hi, I'm Hazim.</h1>
+                    <h2>I'm a Gameplay Programmer & Project Manager.</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= -->
+        <!--    QUICK ABOUT SECTION    -->
+        <!--   *** MOVED UP *** -->
+        <!-- ======================= -->
+        <section class="quick-about">
+            <div class="window pixel-border">
+                <div class="window-titlebar">
+                    <span>[ about_me.md ]</span>
+                </div>
+                <div class="window-content">
+                    <p>
+                        A versatile developer with a passion for building engaging gameplay systems and leading teams from concept to completion. I thrive on solving complex problems, whether it's programming physics for a grappling hook or managing a 14-person event team.
+                    </p>
+                    <a href="about.html" class="btn-pixel">Read Full Bio & Skills</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= -->
+        <!-- FEATURED PROJECTS CAROUSEL -->
+        <!--   *** MOVED DOWN *** -->
+        <!-- ======================= -->
+        <section class="featured-projects">
+            <h2>[ Featured Projects ]</h2>
+            
+            <div class="carousel-wrapper">
+                <button id="carousel-prev" class="carousel-btn btn-pixel">&lt;</button>
+
+                <div class="carousel-container pixel-border">
+                    <div class="carousel-track">
+                        
+                        <!-- Project Card 1: Gasing Guardian -->
+                        <div class="project-card"
+                             data-title="Gasing Guardian"
+                             data-media="https://placehold.co/600x400/2a2a2a/d4d4d4?text=Gasing+Guardian+Video"
+                             data-description="Built a physics-based grappling hook, player combat system, and enemy AI for a 3D platformer."
+                             data-tags="Project Manager,Gameplay Programmer"
+                             data-details-page="project-gasing-guardian.html">
+
+                            <video muted loop playsinline
+                                   poster="imgs/gamethumbs/gasingguardianthumb.png"
+                                   src="static/videos/gasing-guardian-preview.mp4"
+                                   alt="Gasing Guardian Game Thumbnail">
+                            </video>
+
+                            <h3>Gasing Guardian</h3>
+                            <p>A physics-based platformer with a unique grappling hook mechanic.</p>
+                            <div class="project-tags">
+                                <span class="tag-pm">Project Manager</span>
+                                <span class="tag-prog">Gameplay Programmer</span>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2: Super Nasi Odyssey -->
+                        <div class="project-card"
+                             data-title="Super Nasi Odyssey"
+                             data-media="https://placehold.co/600x400/2a2a2a/d4d4d4?text=Super+Nasi+Video"
+                             data-description="Developed an 8-way character movement system and a timeline-based cutscene system in Unreal Engine."
+                             data-tags="Project Manager,Gameplay Programmer"
+                             data-details-page="project-super-nasi.html">
+
+                            <video muted loop playsinline
+                                   poster="httpsstatic/images/nasi-odyssey-thumb.png"
+                                   src="static/videos/nasi-odyssey-preview.mp4"
+                                   alt="Super Nasi Odyssey Game Thumbnail">
+                            </video>
+
+                            <h3>Super Nasi Odyssey</h3>
+                            <p>An Unreal Engine 3D platformer with a timeline-based cutscene system.</p>
+                            <div class="project-tags">
+                                <span class="tag-pm">Project Manager</span>
+                                <span class="tag-prog">Gameplay Programmer</span>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3: Quizzard (Shows versatility) -->
+                        <div class="project-card"
+                             data-title="Quizzard (Full-Stack Web App)"
+                             data-media="https://placehold.co/600x400/2a2a2a/d4d4d4?text=Quizzard+Demo"
+                             data-description="Built a gamified e-learning RPG site using PHP, MySQL, and JavaScript, including a points/badges/leveling system."
+                             data-tags="Project Manager,Backend Developer"
+                             data-details-page="project-quizzard.html">
+
+                             <video muted loop playsinline
+                                    poster="httpsstatic/images/quizzard-thumb.png"
+                                    src="static/videos/quizzard-preview.mp4"
+                                    alt="Quizzard Web App Thumbnail">
+                             </video>
+
+                            <h3>Quizzard Web App</h3>
+                            <p>A full-stack gamified e-learning RPG site built with PHP and MySQL.</p>
+                            <div class="project-tags">
+                                <span class="tag-pm">Project Manager</span>
+                                <span class="tag-web">Backend Developer</span>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 4: Luggage Buds (Shows art) -->
+                        <div class="project-card"
+                             data-title="Luggage Buds (48-Hour Jam)"
+                             data-media="https://placehold.co/600x400/2a2a2a/d4d4d4?text=Luggage+Buds+Video"
+                             data-description="Created all characters, backgrounds, UI, and cutscene assets in Aseprite for a 5-person team."
+                             data-tags="Pixel Art Artist"
+                             data-details-page="project-luggage-buds.html">
+
+                            <video muted loop playsinline
+                                   poster="httpsstatic/images/luggage-buds-thumb.png"
+                                   src="static/videos/luggage-buds-preview.mp4"
+                                   alt="Luggage Buds Game Thumbnail">
+                            </video>
+
+                            <h3>Luggage Buds (48-hr Jam)</h3>
+                            <p>Created all characters, backgrounds, and UI assets in Aseprite.</p>
+                            <div class="project-tags">
+                                <span class="tag-art">Pixel Art Artist</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <button id="carousel-next" class="carousel-btn btn-pixel">&gt;</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================= -->
+    <!--         FOOTER          -->
+    <!-- ======================= -->
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="[Your-LinkedIn-URL]" target="_blank">[ LinkedIn ]</a>
+            <a href="[Your-Itch-URL]" target="_blank">[ Itch.io ]</a>
+            <a href="[Your-GitHub-URL]" target="_blank">[ GitHub ]</a>
+        </div>
+        <p>&copy; 2025 Hazim. All systems nominal.</p>
+    </footer>
     
+    <!-- ======================= -->
+    <!--      PROJECT MODAL      -->
+    <!-- ======================= -->
+    <!-- This is hidden by default with CSS (Shared across all pages) -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="window pixel-border" id="modal-window">
+            <div class="window-titlebar">
+                <span id="modal-title">[ project.exe ]</span>
+                <div class="window-buttons">
+                    <!-- This 'X' is a real button -->
+                    <button id="modal-close" class="window-btn">X</button>
+                </div>
+            </div>
+            <div class="window-content modal-content-layout">
+                <div class="modal-media" id="modal-media">
+                    <!-- Media (video/img) goes here -->
+                    <img src="https://placehold.co/600x400/2a2a2a/d4d4d4?text=Project+Media" alt="Project Media">
+                </div>
+                <div class="modal-details">
+                    <p id="modal-description">Project description goes here.</p>
+                    <div class="project-tags" id="modal-tags">
+                        <!-- Tags go here -->
+                    </div>
+                    <a href="#" id="modal-details-link" class="btn-pixel" target="_blank">View Full Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

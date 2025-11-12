@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazim's Portfolio - Projects</title>
+
+    <!-- Google Font: VT323 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <!-- Your Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Your JavaScript (defer ensures it runs after HTML is parsed) -->
+    <script src="script.js" defer></script>
+</head>
+<body class="dark-mode">
+
+    <!-- ======================= -->
+    <!--     MAIN NAVIGATION     -->
+    <!-- ======================= -->
+    <header class="main-header pixel-border">
+        <nav class="main-nav">
+            <div class="nav-logo">
+                <a href="index.html">[ HZ ]</a>
+            </div>
+            <ul>
+                <li><a href="index.html">[ Home ]</a></li>
+                <li><a href="projects.html" class="active">[ Projects ]</a></li>
+                <li><a href="about.html">[ About ]</a></li>
+                <li><a href="contact.html">[ Contact ]</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" class="btn-pixel">Light Mode</button>
+    </header>
+
+    <main class="container">
+
+        <!-- ======================= -->
+        <!--     PROJECTS EXPLORER     -->
+        <!-- ======================= -->
+        <section class="projects-explorer">
+            <!-- This 'window' class is for the retro OS look -->
+            <div class="window pixel-border">
+                <div class="window-titlebar">
+                    <span>[ C:\Projects ]</span>
+                    <div class="window-buttons">
+                        <span class="window-btn">_</span>
+                        <span class="window-btn">□</span>
+                        <span class="window-btn">X</span>
+                    </div>
+                </div>
+                <div class="window-content">
+                    
+                    <!-- === NEW: Filter Buttons === -->
+                    <div class="filter-buttons">
+                        <button class="btn-pixel filter-btn active" data-filter="all">[ Show All ]</button>
+                        <button class="btn-pixel filter-btn" data-filter="academic">[ Academic Games ]</button>
+                        <button class="btn-pixel filter-btn" data-filter="gamejam">[ Game Jams ]</button>
+                        <button class="btn-pixel filter-btn" data-filter="software">[ Software ]</button>
+                    </div>
+
+                    <!-- === All Projects in one grid === -->
+                    <div class="project-grid">
+                        
+                        <!-- Academic -->
+                        <div class="project-card" 
+                             data-category="academic"
+                             data-title="Gasing Guardian"
+                             data-media="https://placehold.co/600x400/2a2a2a/d4d4d4?text=Gasing+Guardian+Video"
+                             data-description="Built a physics-based grappling hook, player combat system, and enemy AI for a 3D platformer."
+                             data-tags="Project Manager,Gameplay Programmer"
+                             data-details-page="project-gasing-guardian.html">
+                            
+                            <video muted loop playsinline
+                                   poster="https://placehold.co/400x300/2a2a2a/d4d4d4?text=Gasing+Guardian"
+                                   src="static/videos/gasing-guardian-preview.mp4"
+                                   alt="Gasing Guardian Thumbnail">
+                            </video>
+                            
+                            <h3>Gasing Guardian</h3>
+                            <div class="project-tags">
+                                <span class="tag-pm">Project Manager</span>
+                                <span class="tag-prog">Gameplay Programmer</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card"
+                             data-category="academic"
+                             data-title="Super Nasi Odyssey"
+                             data-media="https://placehold.co/600x400/2a2a2a/d4d4d4?text=Super+Nasi+Video"
+                             data-description="Developed an 8-way character movement system and a timeline-based cutscene system in Unreal Engine."
+                             data-tags="Project Manager,Gameplay Programmer"
+                             data-details-page="project-super-nasi.html">
+
+                            <video muted loop playsinline
+                                   poster="https://placehold.co/400x300/2a2a2a/d4d4d4?text=Super+Nasi+Odyssey"
+                                   src="static/videos/nasi-odyssey-preview.mp4"
+                                   alt="Super Nasi Odyssey Thumbnail">
+                            </video>
+
+                            <h3>Super Nasi Odyssey</h3>
+                            <div class="project-tags">
+                                <span class="tag-pm">Project Manager</span>
+                                <span class="tag-prog">Gameplay Programmer</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card"
+                             data-category="academic"
+                             data-title="Seru Hooty"
+                             data-media="https://placehold.co/600x400/2a2a2a/d4d4d4?text=Seru+Hooty+Video"
+                             data-description="Programmed all core physics and timing-based puzzle mechanics for a 3D puzzle game."
+                             data-tags="Project Manager,Gameplay Programmer"
+                             data-details-page="project-seru-hooty.html">
+
+                            <video muted loop playsinline
+                                   poster="https://placehold.co/400x300/2a2a2a/d4d4d4?text=Seru+Hooty"
+                                   src="static/videos/seru-hooty-preview.mp4"
+                                   alt="Seru Hooty Thumbnail">
+                            </video>
+
+                            <h3>Seru Hooty</h3>
+                            <div class="project-tags">
+                                <span class="tag-pm">Project Manager</span>
+                                <span class="tag-prog">Gameplay Programmer</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card"
+                             data-category="academic"
+                             data-title="Elian's Bloom"
+                             data-media="https://placehold.co/600x400/2a2a2a/d4d4d4?text=Elian's+Bloom+Video"
+                             data-description="Coded all game logic and implemented visual special effects for a 2D game in Pygame."
+                             data-tags="Lead Programmer,Level Designer"
+                             data-details-page="project-elians-bloom.html">
+
+                            <video muted loop playsinline
+                                   poster="https://placehold.co/400x300/2a2a2a/d4d4d4?text=Elian's+Bloom"
+                                   src="static/videos/elians-bloom-preview.mp4"
+                                   alt="Elian's Bloom Thumbnail">
+                            </video>
+
+                            <h3>Elian's Bloom</h3>
+                            <div class="project-tags">
+                                <span class="tag-prog">Lead Programmer</span>
+                                <span class="tag-design">Level Designer</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card"
+                             data-category="academic"
+                             data-title="Dungeon Escape (Board Game)"
+                             data-media="https://placehold.co/600x400/2a2a2a/d4d4d4?text=Dungeon+Escape+Photo"
+                             data-description="Designed and balanced a 3-4 player survival horror board game with PvE/PvP mechanics."
+                             data-tags="Game Designer,Project Manager"
+                             data-details-page="project-dungeon-escape.html">
+
+                            <video muted loop playsinline
+                                   poster="https://placehold.co/400x300/2a2a2a/d4d4d4?text=Dungeon+Escape"
+                                   src="static/videos/dungeon-escape-preview.mp4"
+                                   alt="Dungeon Escape Thumbnail">
+                            </video>
+
+                            <h3>Dungeon Escape</h3>
+                            <div class="project-tags">
+                                <span class="tag-design">Game Designer</span>
+                                <span class="tag-pm">Project Manager</span>
+                            </div>
+                        </div>
+
+                        <!-- Game Jam -->
+                        <div class="project-card"
+                             data-category="gamejam"
+                             data-title="Sugar Slasher"
+                             data-media="https://placehold.co/600x400/2a2a2a/d4d4d4?text=Sugar+Slasher+Video"
+                             data-description="Managed the team and programmed core gameplay for a 2-week game jam."
+                             data-tags="Project Manager,Gameplay Programmer"
+                             data-details-page="project-sugar-slasher.html">
+
+                            <video muted loop playsinline
+                                   poster="https://placehold.co/400x300/2a2a2a/d4d4d4?text=Sugar+Slasher"
+                                   src="static/videos/sugar-slasher-preview.mp4"
+                                   alt="Sugar Slasher Thumbnail">
+                            </video>
+
+                            <h3>Sugar Slasher</h3>
+                            <div class="project-tags">
+                                <span class="tag-pm">Project Manager</span>
+                                <span class="tag-prog">Gameplay Programmer</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card"
+                             data-category="gamejam"
+                             data-title="Luggage Buds (48-Hour Jam)"
+                             data-media="https://placehold.co/600x400/2a2a2a/d4d4d4?text=Luggage+Buds+Video"
+                             data-description="Created all characters, backgrounds, UI, and cutscene assets in Aseprite for a 5-person team."
+                             data-tags="Pixel Art Artist"
+                             data-details-page="project-luggage-buds.html">
+
+                            <video muted loop playsinline
+                                   poster="https://placehold.co/400x300/2a2a2a/d4d4d4?text=Luggage+Buds"
+                                   src="static/videos/luggage-buds-preview.mp4"
+                                   alt="Luggage Buds Thumbnail">
+                            </video>
+
+                            <h3>Luggage Buds</h3>
+                            <div class="project-tags">
+                                <span class="tag-art">Pixel Art Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card"
+                             data-category="gamejam"
+                             data-title="Seven Days to Feed (4-Day Jam)"
+                             data-media="https://placehold.co/600x400/2a2a2a/d4d4d4?text=Seven+Days+Video"
+                             data-description="Designed all environmental tilemaps and UI icons for a 4-person team."
+                             data-tags="Pixel Art Artist"
+                             data-details-page="project-seven-days.html">
+
+                            <video muted loop playsinline
+                                   poster="https://placehold.co/400x300/2a2a2a/d4d4d4?text=Seven+Days+to+Feed"
+                                   src="static/videos/seven-days-preview.mp4"
+                                   alt="Seven Days to Feed Thumbnail">
+                            </video>
+
+                            <h3>Seven Days to Feed</h3>
+                            <div class="project-tags">
+                                <span class="tag-art">Pixel Art Artist</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Software -->
+                        <div class="project-card"
+                             data-category="software"
+                             data-title="Quizzard (Full-Stack Web App)"
+                             data-media="https://placehold.co/600x400/2a2a2a/d4d4d4?text=Quizzard+Demo"
+                             data-description="Built a gamified e-learning RPG site using PHP, MySQL, and JavaScript, including a points/badges/leveling system."
+                             data-tags="Project Manager,Backend Developer"
+                             data-details-page="project-quizzard.html">
+
+                            <video muted loop playsinline
+                                   poster="https://placehold.co/400x300/2a2a2a/d4d4d4?text=Quizzard"
+                                   src="static/videos/quizzard-preview.mp4"
+                                   alt="Quizzard Thumbnail">
+                            </video>
+
+                            <h3>Quizzard</h3>
+                            <div class="project-tags">
+                                <span class="tag-pm">Project Manager</span>
+                                <span class="tag-web">Backend Developer</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card"
+                             data-category="software"
+                             data-title="HRM System (Java App)"
+                             data-media="https://placehold.co/600x400/2a2a2a/d4d4d4?text=HRM+App+Demo"
+                             data-description="Built a Java SWING desktop app for managing employee records with Google GSON for database operations."
+                             data-tags="Co-developer,Java"
+                             data-details-page="project-hrm-system.html">
+
+                            <video muted loop playsinline
+                                   poster="https://placehold.co/400x300/2a2a2a/d4d4d4?text=HRM+System"
+                                   src="static/videos/hrm-system-preview.mp4"
+                                   alt="HRM System Thumbnail">
+                            </video>
+
+                            <h3>HRM System</h3>
+                            <div class="project-tags">
+                                <span class="tag-prog">Co-developer</span>
+                                <span class="tag-java">Java</span>
+                            </div>
+                        </div>
+
+                    </div> <!-- /.project-grid -->
+
+                </div> <!-- /.window-content -->
+            </div> <!-- /.window -->
+        </section>
+
+    </main>
+
+    <!-- ======================= -->
+    <!--         FOOTER          -->
+    <!-- ======================= -->
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="[Your-LinkedIn-URL]" target="_blank">[ LinkedIn ]</a>
+            <a href="[Your-Itch-URL]" target="_blank">[ Itch.io ]</a>
+            <a href="[Your-GitHub-URL]" target="_blank">[ GitHub ]</a>
+        </div>
+        <p>&copy; 2025 Hazim. All systems nominal.</p>
+    </footer>
+
+    <!-- ======================= -->
+    <!--      PROJECT MODAL      -->
+    <!-- ======================= -->
+    <!-- This is hidden by default with CSS (Shared across all pages) -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="window pixel-border" id="modal-window">
+            <div class="window-titlebar">
+                <span id="modal-title">[ project.exe ]</span>
+                <div class="window-buttons">
+                    <!-- This 'X' is a real button -->
+                    <button id="modal-close" class="window-btn">X</button>
+                </div>
+            </div>
+            <div class="window-content modal-content-layout">
+                <div class="modal-media" id="modal-media">
+                    <!-- Media (video/img) goes here -->
+                    <img src="https://placehold.co/600x400/2a2a2a/d4d4d4?text=Project+Media" alt="Project Media">
+                </div>
+                <div class="modal-details">
+                    <p id="modal-description">Project description goes here.</p>
+                    <div class="project-tags" id="modal-tags">
+                        <!-- Tags go here -->
+                    </div>
+                    <a href="#" id="modal-details-link" class="btn-pixel" target="_blank">View Full Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
