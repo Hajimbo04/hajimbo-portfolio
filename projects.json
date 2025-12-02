@@ -362,7 +362,7 @@
     "title": "Event Booking System UI/UX",
     "description": "Designed a high-fidelity event booking app prototype in Figma, including full user journey from browsing to checkout.",
     "mediaSource": "static/videos/figma-event-preview.mp4",
-    "poster": "imgs/gamethumbs/figmathumb.png",
+    "poster": "imgs/gamethumbs/figmathumb.PNG",
     "detailsPage": "project-event-booking-ux.html",
     "tags": ["UI/UX Designer"]
   },
@@ -372,7 +372,7 @@
     "title": "2D Level Design",
     "description": "Designed a narrative-driven 2D Unity level focusing on environmental storytelling and emotional pacing.",
     "mediaSource": "static/videos/narrative-level-preview.mp4",
-    "poster": "imgs/gamethumbs/2dlevelthumb.png",
+    "poster": "imgs/gamethumbs/2dlevelthumb.PNG",
     "detailsPage": "project-narrative-level.html",
     "tags": ["Level Designer", "Narrative Designer"]
   }
