@@ -25,6 +25,13 @@
     --contact-email: #c71610;
 }
 
+.about-page-wrapper,    
+.projects-explorer,     
+.contact-section        
+{
+    padding-top: 40px;
+}
+
 /* light mode */
 .light-mode {
     --color-bg: #f0f0f0;
