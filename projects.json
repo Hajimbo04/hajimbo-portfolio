@@ -322,7 +322,7 @@
     "title": "Entrepreneurship Booth",
     "description": "Assisted as project manager and marketing lead, designing posters and helping the team exceed the fundraising target by 100%.",
     "mediaSource": "static/videos/spin-wheel-preview.mp4",
-    "poster": "imgs/gamethumbs/scoopthumb.png",
+    "poster": "imgs/gamethumbs/scoopthumb.PNG",
     "detailsPage": "project-spin-wheel.html",
     "tags": ["Assistant Event Manager", "Marketing"]
   },
@@ -352,7 +352,7 @@
     "title": "Retail Customer Behavior Analysis",
     "description": "Analyzed a large retail dataset using R, identifying correlations between customer payment methods and product ratings.",
     "mediaSource": "static/videos/retail-analysis-preview.mp4",
-    "poster": "imgs/gamethumbs/analysisthumb.png",
+    "poster": "imgs/gamethumbs/analysisthumb.PNG",
     "detailsPage": "project-retail-analysis.html",
     "tags": ["Data Analyst"]
   },
