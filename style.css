@@ -244,7 +244,7 @@ img, video {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
     gap: 20px;
 }
 
@@ -690,7 +690,7 @@ img, video {
     margin-bottom: 0; 
 }
 .project-key-details h3 {
-    text-align: center;
+    text-align: left;
     margin-top: 0;
 }
 .project-key-details ul {

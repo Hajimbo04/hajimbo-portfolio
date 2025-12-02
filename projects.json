@@ -48,7 +48,7 @@
         "contributions": "<p>As the Project Manager and Gameplay Programmer, I led a team of 4 to deliver this technical showcase.</p><ul class='contribution-list'><li><strong>Advanced Movement:</strong> Developed a responsive 8-way character movement system.</li><li><strong>Cutscene System:</strong> Implemented a timeline-based cutscene system for narrative delivery.</li><li><strong>Visual Effects:</strong> Created particle systems including running VFX to enhance game feel.</li><li><strong>Technical Implementation:</strong> Utilized the PaperZD plugin to integrate 2D sprite-based animation systems within a 3D Unreal Engine world.</li></ul>",
         "fastFacts": [
             { "label": "Role", "value": "Project Manager, Gameplay Programmer" },
-            { "label": "Tools", "value": "Unreal Engine, C#, PaperZD" },
+            { "label": "Tools", "value": "Unreal Engine, C++, PaperZD" },
             { "label": "Platform", "value": "PC (Windows)" },
             { "label": "Team Size", "value": "4" },
             { "label": "Duration", "value": "14 Weeks" }
