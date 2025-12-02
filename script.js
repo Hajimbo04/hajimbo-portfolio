@@ -1,3 +1,4 @@
+// functions for project generations
 function getTagClass(tag) {
     const t = tag.toLowerCase();
     if (t.includes('programmer') || t.includes('developer') || t.includes('co-developer')) return 'tag-prog';
@@ -11,14 +12,11 @@ function getTagClass(tag) {
     if (t.includes('actor')) return 'tag-actor';
     if (t.includes('writing') || t.includes('writer')) return 'tag-writing';
     if (t.includes('vr')) return 'tag-art';
-    return 'tag-prog'; // Default fallback
+    return 'tag-prog'; 
 }
 
 function createProjectCard(project) {
-    const tagsHtml = project.tags.map(tag => 
-        `<span class="${getTagClass(tag)}">${tag}</span>`
-    ).join('');
-
+    const tagsHtml = project.tags.map(tag => `<span class="${getTagClass(tag)}">${tag}</span>`).join('');
     const dataTags = project.tags.join(',');
     const itchAttribute = project.itchUrl ? `data-itch-url="${project.itchUrl}"` : '';
 
@@ -31,19 +29,10 @@ function createProjectCard(project) {
         data-tags="${dataTags}"
         data-details-page="${project.detailsPage}"
         ${itchAttribute}>
-        
-        <video muted loop playsinline
-            poster="${project.poster}"
-            src="${project.mediaSource}"
-            alt="${project.title} Thumbnail">
-        </video>
-        
+        <video muted loop playsinline poster="${project.poster}" src="${project.mediaSource}"></video>
         <h3>${project.title}</h3>
-        <div class="project-tags">
-            ${tagsHtml}
-        </div>
-    </div>
-    `;
+        <div class="project-tags">${tagsHtml}</div>
+    </div>`;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -51,32 +40,123 @@ document.addEventListener('DOMContentLoaded', () => {
     initParticles();
     initDraggableWindows();
     initThemeToggle();
-    initCarousel();
-    initGallery();
+    initCarousel(); 
 
     const gridContainer = document.getElementById('project-grid-container');
-
     if (gridContainer) {
-        fetch('projects.json')
-            .then(response => response.json())
-            .then(projects => {
-                gridContainer.innerHTML = projects.map(createProjectCard).join('');
-                
-                setupProjectInteractions();
-                setupFilters();
-            })
-            .catch(error => {
-                console.error('Error loading projects:', error);
-                gridContainer.innerHTML = '<p style="color:red; text-align:center;">Error loading projects. Please try refreshing.</p>';
-            });
-    } else {
+        loadProjectsGrid(gridContainer);
+    } 
+
+    const detailTitle = document.getElementById('detail-title');
+    if (detailTitle) {
+        loadProjectDetails();
+    }
+
+    if (!gridContainer && !detailTitle) {
         setupProjectInteractions();
-        setupFilters(); 
     }
 });
 
+function loadProjectsGrid(container) {
+    fetch('projects.json')
+        .then(response => response.json())
+        .then(projects => {
+            container.innerHTML = projects.map(createProjectCard).join('');
+            setupProjectInteractions();
+            setupFilters();
+        })
+        .catch(err => console.error('Error loading projects grid:', err));
+}
+
+function loadProjectDetails() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const projectId = urlParams.get('id');
+
+    if (!projectId) {
+        document.getElementById('loading-message').textContent = "[ Error: No Project ID Specified ]";
+        return;
+    }
+
+    const jsonPath = '../projects.json';
+
+    fetch(jsonPath)
+        .then(res => res.json())
+        .then(projects => {
+            const project = projects.find(p => p.id === projectId);
+            
+            if (!project) {
+                document.getElementById('loading-message').textContent = "[ Error: Project Not Found ]";
+                return;
+            }
+
+            injectProjectData(project);
+        })
+        .catch(err => {
+            console.error(err);
+            document.getElementById('loading-message').textContent = "[ Error: Could not load project data ]";
+        });
+}
+
+function injectProjectData(project) {
+    const info = project.detailedInfo;
+    if (!info) {
+        document.getElementById('loading-message').textContent = "[ Error: Detailed info missing for this project ]";
+        return;
+    }
+
+    document.title = `Hazim's Portfolio - ${project.title}`;
+    document.getElementById('detail-window-title').textContent = info.windowTitle || `[ ${project.id}.exe ]`;
+    document.getElementById('detail-title').textContent = project.title;
+    document.getElementById('detail-overview').innerHTML = info.overview;
+    document.getElementById('detail-contributions').innerHTML = info.contributions;
+    document.getElementById('detail-hero-image').src = info.heroImage;
+
+    const tagsContainer = document.getElementById('detail-tags');
+    tagsContainer.innerHTML = project.tags.map(tag => 
+        `<span class="${getTagClass(tag)}">${tag}</span>`
+    ).join('');
+
+    const factsList = document.getElementById('detail-facts-list');
+    factsList.innerHTML = info.fastFacts.map(fact => 
+        `<li><strong>${fact.label}:</strong> ${fact.value}</li>`
+    ).join('');
+
+    const playLink = document.getElementById('detail-play-link');
+    if (info.playLink) {
+        playLink.href = info.playLink;
+        playLink.style.display = 'block';
+    } else {
+        playLink.style.display = 'none';
+    }
+
+    if (info.gallery && info.gallery.length > 0) {
+        const mainDisplay = document.getElementById('gallery-main-display');
+        const thumbsContainer = document.getElementById('detail-gallery-thumbs');
+        
+        mainDisplay.src = info.gallery[0];
+
+        thumbsContainer.innerHTML = info.gallery.map((src, index) => `
+            <img class="gallery-thumb pixel-border ${index === 0 ? 'active' : ''}" 
+                 src="${src}" 
+                 data-src="${src}" 
+                 alt="Gallery Image ${index + 1}">
+        `).join('');
+
+        initGallery(); 
+    } else {
+        document.querySelector('.project-gallery-window').style.display = 'none';
+    }
+
+    document.getElementById('loading-message').style.display = 'none';
+    document.getElementById('project-content').style.display = 'grid'; 
+
+    if(window.innerWidth < 1024) {
+         document.getElementById('project-content').style.display = 'block';
+    }
+}
+
+// interactive features
 function setupProjectInteractions() {
-    
     const allProjectCards = document.querySelectorAll('.project-card');
     let hoverTimer = null; 
 
@@ -86,27 +166,23 @@ function setupProjectInteractions() {
         
         card.addEventListener('mouseenter', () => {
             hoverTimer = setTimeout(() => {
-                video.play().catch(e => { /* Ignore auto-play errors */ });
+                video.play().catch(e => {});
             }, 400); 
         });
         
         card.addEventListener('mouseleave', () => {
-            if (hoverTimer) {
-                clearTimeout(hoverTimer);
-                hoverTimer = null;
-            }
+            if (hoverTimer) { clearTimeout(hoverTimer); hoverTimer = null; }
             video.pause();
             video.currentTime = 0;
             video.load(); 
         });
     });
 
-    // MODAL LOGIC 
+    // Modal Logic
     const modal = document.getElementById('project-modal');
     const modalCloseBtn = document.getElementById('modal-close');
     
     if (modal && modalCloseBtn && allProjectCards.length > 0) {
-        
         allProjectCards.forEach(card => {
             card.addEventListener('click', () => {
                 const title = card.dataset.title;
@@ -114,7 +190,7 @@ function setupProjectInteractions() {
                 const description = card.dataset.description;
                 const tagsRaw = card.dataset.tags || "";
                 const tags = tagsRaw.split(',');
-                const detailsPage = card.dataset.detailsPage;
+                const detailsPage = card.dataset.detailsPage; 
                 const itchUrl = card.dataset.itchUrl || ''; 
 
                 document.getElementById('modal-title').textContent = `[ ${title}.exe ]`;
@@ -132,9 +208,9 @@ function setupProjectInteractions() {
 
                 const mediaContainer = document.getElementById('modal-media');
                 if (mediaUrl.endsWith('.mp4') || mediaUrl.endsWith('.webm')) {
-                    mediaContainer.innerHTML = `<video controls autoplay muted loop playsinline src="${mediaUrl}" alt="${title} media"></video>`;
+                    mediaContainer.innerHTML = `<video controls autoplay muted loop playsinline src="${mediaUrl}"></video>`;
                 } else {
-                    mediaContainer.innerHTML = `<img src="${mediaUrl}" alt="${title} media">`;
+                    mediaContainer.innerHTML = `<img src="${mediaUrl}">`;
                 }
 
                 const tagsContainer = document.getElementById('modal-tags');
@@ -153,22 +229,16 @@ function setupProjectInteractions() {
         const closeModal = () => {
             modal.style.display = 'none';
             const modalVideo = modal.querySelector('video');
-            if (modalVideo) {
-                modalVideo.pause();
-                modalVideo.src = ''; 
-            }
+            if (modalVideo) { modalVideo.pause(); modalVideo.src = ''; }
         };
 
         modalCloseBtn.addEventListener('click', closeModal);
         modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                closeModal();
-            }
+            if (e.target === modal) closeModal();
         });
     }
 }
 
-// Filter Buttons
 function setupFilters() {
     const filterContainer = document.querySelector('.filter-buttons');
     if (filterContainer) {
@@ -282,7 +352,6 @@ function initDraggableWindows() {
             yOffset = yOffset + (e.clientY - initialMouseY);
         }
 
-        // Resizable Logic
         const resizeHandle = windowEl.querySelector('.resize-handle');
         const minWidth = 300;
         const minHeight = 250;
@@ -328,7 +397,6 @@ function initDraggableWindows() {
 function initThemeToggle() {
     const themeToggleBtn = document.getElementById('theme-toggle');
     if (!themeToggleBtn) return;
-
     const applyTheme = (theme) => {
         if (theme === 'light') {
             document.body.classList.add('light-mode');
@@ -338,10 +406,8 @@ function initThemeToggle() {
             themeToggleBtn.textContent = 'Light Mode';
         }
     };
-    
     const savedTheme = localStorage.getItem('theme') || 'dark';
     applyTheme(savedTheme);
-    
     themeToggleBtn.addEventListener('click', () => {
         const isCurrentlyLight = document.body.classList.contains('light-mode');
         const newTheme = isCurrentlyLight ? 'dark' : 'light';
@@ -378,7 +444,6 @@ function initCarousel() {
             if (targetIndex < 0) targetIndex = 0;
             if (targetIndex > cards.length - visibleSlides) targetIndex = cards.length - visibleSlides;
             if (targetIndex < 0) targetIndex = 0;
-            
             track.style.transform = 'translateX(-' + (cardWidth * targetIndex) + 'px)';
             currentIndex = targetIndex;
         };
@@ -411,9 +476,9 @@ function initGallery() {
             });
         });
 
-        if (thumbnails.length > 0) {
+        if (thumbnails.length > 0 && mainDisplay) {
             thumbnails[0].classList.add('active');
-            if (mainDisplay) mainDisplay.src = thumbnails[0].getAttribute('data-src');
+            mainDisplay.src = thumbnails[0].getAttribute('data-src');
         }
     } 
 }

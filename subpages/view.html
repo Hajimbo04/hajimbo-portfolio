@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazim's Portfolio - Project View</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+</head>
+<body class="dark-mode">
+    <header class="main-header pixel-border">
+        <nav class="main-nav">
+            <div class="nav-logo">
+                <a href="../index.html">[ Muhammad Hazim Bin Abd Halim ]</a>
+            </div>
+            <ul>
+                <li><a href="../index.html">[ Home ]</a></li>
+                <li><a href="../projects.html" class="active">[ Projects ]</a></li>
+                <li><a href="../about.html">[ About ]</a></li>
+                <li><a href="../contact.html">[ Contact ]</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" class="btn-pixel">Light Mode</button>
+    </header>
+
+    <main class="container container-project-page">
+        <div id="loading-message" style="text-align:center; margin-top:50px;">
+            <h2>[ Loading Data... ]</h2>
+        </div>
+
+        <div class="project-layout-wrapper" id="project-content" style="display:none;">
+            <section class="project-detail-window">
+                <div class="window pixel-border">
+                    <div class="window-titlebar">
+                        <span id="detail-window-title">[ project.exe ]</span>
+                        <div class="window-buttons">
+                            <span class="window-btn">_</span>
+                            <span class="window-btn">□</span>
+                            <span class="window-btn">X</span>
+                        </div>
+                    </div>
+                    
+                    <div class="window-content">
+                        <img id="detail-hero-image" src="" alt="Project Hero" class="project-hero-image pixel-border">                
+                        <h1 id="detail-title">Project Title</h1>
+                        <div class="project-tags" id="detail-tags">
+                        </div>
+                        <div class="project-detail-layout">                            
+                            <div class="project-description">
+                                <h2>Project Overview</h2>
+                                <div id="detail-overview"></div>
+                                <h2>My Contributions</h2>
+                                <div id="detail-contributions"></div>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="resize-handle"></div>
+                </div> 
+            </section>
+    
+            <div class="right-column-stack">
+                <section class="project-gallery-window">
+                    <div class="window pixel-border">
+                        <div class="window-titlebar">
+                            <span>[ gallery.exe ]</span>
+                            <div class="window-buttons">
+                                <span class="window-btn">_</span>
+                                <span class="window-btn">□</span>
+                                <span class="window-btn">X</span>
+                            </div>
+                        </div>
+                        <div class="window-content gallery-container-new">
+                            <h2>[ Gallery ]</h2>
+                            <div class="gallery-main-image pixel-border">
+                                <img id="gallery-main-display" src="" alt="Main gallery view">
+                            </div>
+                            <div class="gallery-thumbnail-row" id="detail-gallery-thumbs">
+                            </div>
+                        </div>
+                        <div class="resize-handle"></div>
+                    </div>
+                </section>
+
+                <div class="window pixel-border">
+                    <div class="window-titlebar">
+                        <span>[ fast_facts.exe ]</span>
+                        <div class="window-buttons">
+                            <span class="window-btn">_</span>
+                            <span class="window-btn">□</span>
+                            <span class="window-btn">X</span>
+                        </div>
+                    </div>
+                    <div class="window-content project-key-details"> 
+                        <h3>[ Fast Facts ]</h3>
+                        <ul id="detail-facts-list">
+                        </ul>
+                        <a href="#" id="detail-play-link" target="_blank" class="btn-pixel">Play on Itch.io</a>
+                    </div>
+                    <div class="resize-handle"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/muhdhazimabdhalim/" target="_blank">[ LinkedIn ]</a>
+            <a href="https://hajimbo.itch.io/" target="_blank">[ Itch.io ]</a>
+            <a href="https://github.com/Hajimbo04" target="_blank">[ GitHub ]</a>
+        </div>
+        <p>&copy; 2025 Hazim. All systems nominal.</p>
+    </footer>
+</body>
+</html>
