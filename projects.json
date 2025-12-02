@@ -11,7 +11,7 @@
     "tags": ["Project Manager", "Gameplay Programmer"],
     
     "detailedInfo": {
-        "heroImage": "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Gasing+Guardian+Hero",
+        "heroImage": "../imgs/gamethumbs/gasingguardianthumb.png",
         "windowTitle": "[ gasing_guardian.exe ]",
         "overview": "<p>Gasing Guardian is a 2D physics-based platformer created in Unity. The game blends traditional Malaysian culture with fast-paced, modern gameplay. Players control a hero armed with a 'gasing' (a traditional top) which functions as a versatile grappling hook, combat weapon, and puzzle-solving tool.</p>",
         "contributions": "<p>As the Project Manager, I led a team of 5, organizing sprints, managing tasks via Trello, and ensuring we met all our milestones.</p><p>As the lead Gameplay Programmer, my primary responsibilities included:</p><ul class='contribution-list'><li><strong>Physics-Based Grappling Hook:</strong> Engineered the core gasing mechanic from scratch.</li><li><strong>Player Combat System:</strong> Developed the state machine for player combat.</li><li><strong>Enemy AI:</strong> Programmed the basic AI for ground-based enemies.</li></ul>",
@@ -192,7 +192,7 @@
     "title": "Page of Peril",
     "description": "Managed a team of 5, designed all puzzles, and wrote the game narrative based on a 2D-to-3D world-switching mechanic.",
     "mediaSource": "static/videos/paper-adventure-preview.mp4",
-    "poster": "imgs/gamethumbs/paperthumb.png",
+    "poster": "imgs/gamethumbs/pagethumb.png",
     "detailsPage": "subpages/view.html?id=paper-adventure",
     "tags": ["Level Designer", "Puzzle Designer"],
     "detailedInfo": {
@@ -322,7 +322,7 @@
     "title": "Entrepreneurship Booth",
     "description": "Assisted as project manager and marketing lead, designing posters and helping the team exceed the fundraising target by 100%.",
     "mediaSource": "static/videos/spin-wheel-preview.mp4",
-    "poster": "imgs/gamethumbs/spinwheelthumb.png",
+    "poster": "imgs/gamethumbs/scoopthumb.png",
     "detailsPage": "project-spin-wheel.html",
     "tags": ["Assistant Event Manager", "Marketing"]
   },
@@ -352,7 +352,7 @@
     "title": "Retail Customer Behavior Analysis",
     "description": "Analyzed a large retail dataset using R, identifying correlations between customer payment methods and product ratings.",
     "mediaSource": "static/videos/retail-analysis-preview.mp4",
-    "poster": "imgs/gamethumbs/retailthumb.png",
+    "poster": "imgs/gamethumbs/analysisthumb.png",
     "detailsPage": "project-retail-analysis.html",
     "tags": ["Data Analyst"]
   },
@@ -372,7 +372,7 @@
     "title": "2D Level Design",
     "description": "Designed a narrative-driven 2D Unity level focusing on environmental storytelling and emotional pacing.",
     "mediaSource": "static/videos/narrative-level-preview.mp4",
-    "poster": "imgs/gamethumbs/narrativethumb.png",
+    "poster": "imgs/gamethumbs/2dlevelthumb.png",
     "detailsPage": "project-narrative-level.html",
     "tags": ["Level Designer", "Narrative Designer"]
   }

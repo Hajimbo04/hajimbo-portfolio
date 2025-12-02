@@ -508,6 +508,9 @@ img, video {
     gap: 20px;
     align-items: start;
 }
+.profile-text h2:first-child {
+    margin-top: 0;
+}
 @media (min-width: 768px) {
     .profile-content-layout {
         grid-template-columns: 2fr 1fr;
