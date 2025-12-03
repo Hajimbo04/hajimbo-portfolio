@@ -216,7 +216,7 @@
         ]
     }
   },
-  {
+{
     "id": "sugar-slasher",
     "category": "gamejam",
     "title": "Sugar Slasher",
@@ -224,17 +224,59 @@
     "mediaSource": "static/videos/sugar-slasher-preview.mp4",
     "poster": "imgs/gamethumbs/sugarthumb.png",
     "detailsPage": "subpages/view.html?id=sugar-slasher",
-    "tags": ["Project Manager", "Gameplay Programmer"]
+    "itchUrl": "https://hajimbo.itch.io/sugar-slasher",
+    "tags": ["Project Manager", "Gameplay Programmer"],
+    "detailedInfo": {
+        "heroImage": "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Sugar+Slasher+Title",
+        "windowTitle": "[ sugar_slasher.exe ]",
+        "overview": "<p>The last magical girl has returned — rebuilt as a cybernetic warrior. 100 years after the magical war, her mission is to hunt down the cyborg general who destroyed her world.</p><p>Sugar Slasher is a fast-paced arcade shoot ’em up that mixes bright magical girl visuals with cyberpunk vibes. Blast through waves of enemies and master the parry mechanic to survive the final boss battle in the heart of Tokyo.</p>",
+        "contributions": "<p>I served as the Project Manager and Lead Game Designer for this 6-person team.</p><ul class='contribution-list'><li><strong>Management:</strong> Organized the team workflow for the Magical Girl Game Jam #12.</li><li><strong>Gameplay Programming:</strong> Coded the core gameplay loop and the enemy wave spawner system.</li><li><strong>Game Design:</strong> Designed the player mechanics, including the unique bullet parry system.</li></ul>",
+        "fastFacts": [
+            { "label": "Role", "value": "Project Manager, Game Designer" },
+            { "label": "Tools", "value": "Unity, C#" },
+            { "label": "Event", "value": "Magical Girl Game Jam #12" },
+            { "label": "Team Size", "value": "6" },
+            { "label": "Duration", "value": "2 Weeks" }
+        ],
+        "playLink": "https://hajimbo.itch.io/sugar-slasher",
+        "gallery": [
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Bullet+Hell+Gameplay",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Boss+Fight",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Parry+Mechanic",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Cyberpunk+Tokyo"
+        ]
+    }
   },
   {
     "id": "luggage-buds",
     "category": "gamejam",
     "title": "Luggage Buds",
-    "description": "Created all characters, backgrounds, UI, and cutscene assets in Aseprite for a 5-person team.",
+    "description": "Created UI and background assets in Aseprite for a 5-person team during a 48-hour game jam.",
     "mediaSource": "static/videos/luggage-buds-preview.mp4",
     "poster": "imgs/gamethumbs/luggagethumb.png",
     "detailsPage": "subpages/view.html?id=luggage-buds",
-    "tags": ["Pixel Art Artist"]
+    "itchUrl": "https://psychicflash.itch.io/luggage-buds",
+    "tags": ["Pixel Art Artist", "UI Artist"],
+    "detailedInfo": {
+        "heroImage": "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Luggage+Buds+Art",
+        "windowTitle": "[ luggage_buds.exe ]",
+        "overview": "<p>Tappy, Bam, Ogu, and Biggie woke up realizing they haven't packed! Help them sort their luggage so they can catch their flight.</p><p>Luggage Buds is a cute pixel-art organization game created for the Red Games Jam 2025 (Sponsored by AirAsia). It tests your speed and sorting skills under a tight time limit.</p>",
+        "contributions": "<p>I focused on the artistic direction, specifically UI and Environment.</p><ul class='contribution-list'><li><strong>UI Design:</strong> Created all user interface elements including menus and buttons using Aseprite.</li><li><strong>Background Art:</strong> Designed the background environments to fit the cute, vibrant pixel art style.</li><li><strong>Rapid Prototyping:</strong> Delivered all assets within the strict 48-hour deadline.</li></ul>",
+        "fastFacts": [
+            { "label": "Role", "value": "Pixel Artist, UI Artist" },
+            { "label": "Tools", "value": "Aseprite, Unity" },
+            { "label": "Event", "value": "Red Games Jam 2025" },
+            { "label": "Team Size", "value": "5" },
+            { "label": "Duration", "value": "48 Hours" }
+        ],
+        "playLink": "https://psychicflash.itch.io/luggage-buds",
+        "gallery": [
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Sorting+Gameplay",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Cute+UI+Design",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Character+Select",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Win+Screen"
+        ]
+    }
   },
   {
     "id": "seven-days-feed",
@@ -244,17 +286,58 @@
     "mediaSource": "static/videos/seven-days-preview.mp4",
     "poster": "imgs/gamethumbs/seventhumb.png",
     "detailsPage": "subpages/view.html?id=seven-days-feed",
-    "tags": ["Pixel Art Artist"]
+    "itchUrl": "https://joycezq.itch.io/seven-days-to-feed",
+    "tags": ["Pixel Art Artist", "Environment Artist"],
+    "detailedInfo": {
+        "heroImage": "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Farm+Environment",
+        "windowTitle": "[ seven_days.exe ]",
+        "overview": "<p>A mysterious wizard has cursed your village for wasting food. You play as a farmer with limited resources who must grow enough food to feed the village or face seventy years of starvation.</p><p>Inspired by the theme 'Outplay Hunger', you must plant seeds, water crops, and use fertilizer to fend off pests in this farming management game.</p>",
+        "contributions": "<p>I was the primary Environment Artist for Team Sleepy Devs.</p><ul class='contribution-list'><li><strong>Environment Design:</strong> Designed the complete farmland environment tilemaps using Aseprite.</li><li><strong>Icon Design:</strong> Created the UI icons for the farming tools (scythe, water, fertilizer).</li><li><strong>Collaboration:</strong> Worked closely with the programmer to ensure assets fit the grid-based gameplay.</p></ul>",
+        "fastFacts": [
+            { "label": "Role", "value": "Environment Artist" },
+            { "label": "Tools", "value": "Aseprite, Unity" },
+            { "label": "Event", "value": "Games 4 Change Jam" },
+            { "label": "Team Size", "value": "4" },
+            { "label": "Duration", "value": "4 Days" }
+        ],
+        "playLink": "https://joycezq.itch.io/seven-days-to-feed",
+        "gallery": [
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Farming+Gameplay",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Tilemap+Design",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=UI+Icons",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Wizard+Curse"
+        ]
+    }
   },
-  {
+{
     "id": "no-signal",
     "category": "gamejam",
     "title": "No Signal",
-    "description": "Designed the level",
-    "mediaSource": "static/videos/seven-days-preview.mp4",
+    "description": "Designed the level and game logic for a top-down atmospheric puzzle game where light is your lifeline.",
+    "mediaSource": "static/videos/no-signal-preview.mp4",
     "poster": "imgs/gamethumbs/nosignalthumb.png",
     "detailsPage": "subpages/view.html?id=no-signal",
-    "tags": ["Level Designer"]
+    "tags": ["Level Designer", "Game Logic"],
+    "detailedInfo": {
+        "heroImage": "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=No+Signal+Level",
+        "windowTitle": "[ no_signal.exe ]",
+        "overview": "<p>No Signal is a top-down atmospheric puzzle game built around the theme of 'Signal/Light Loss'. The goal is simple but stressful: reach the Signal Booster exit before the screen goes completely black.</p><p>The game features a shrinking 'vision circle' mechanic—players have exactly 60 seconds to navigate a static maze before their field of view reaches zero and they are lost in the darkness.</p>",
+        "contributions": "<p>I was responsible for the Level Design and core Game Logic.</p><ul class='contribution-list'><li><strong>Level Design:</strong> Built the maze layout using Unity Tilemap and ProBuilder, placing start/end points and defining collision boundaries.</li><li><strong>Scope Management:</strong> Focused on a 'No-Crunch' scope by utilizing geometric shapes instead of complex assets to finish within 48 hours.</li></ul>",
+        "fastFacts": [
+            { "label": "Role", "value": "Level Designer" },
+            { "label": "Tools", "value": "Unity" },
+            { "label": "Event", "value": "Game Jam (48 Hours)" },
+            { "label": "Team Size", "value": "3" },
+            { "label": "Duration", "value": "48 Hours" }
+        ],
+        "playLink": "",
+        "gallery": [
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Maze+Overview",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Darkness+Mechanic",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Green+Zone+Exit",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Unity+Editor+View"
+        ]
+    }
   },
   {
     "id": "quizzard",
@@ -263,8 +346,28 @@
     "description": "Built a gamified e-learning RPG site using PHP, MySQL, and JavaScript, including a points/badges/leveling system.",
     "mediaSource": "static/videos/quizzard-preview.mp4",
     "poster": "imgs/gamethumbs/quizzardthumb.PNG",
-    "detailsPage": "project-quizzard.html",
-    "tags": ["Project Manager", "Backend Developer"]
+    "detailsPage": "subpages/view.html?id=quizzard",
+    "tags": ["Project Manager", "Backend Developer"],
+    "detailedInfo": {
+        "heroImage": "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Quizzard+Dashboard",
+        "windowTitle": "[ quizzard_server.php ]",
+        "overview": "<p>Quizzard is a gamified e-learning web application designed to make studying engaging. It treats education like an RPG: students earn XP for answering quizzes correctly, climb the competitive leaderboard, and unlock special badges at certain levels.</p><p>The platform supports user accounts, progress tracking, and dynamic quiz generation, bridging the gap between study and play.</p>",
+        "contributions": "<p>I served as the Backend Developer and assisted with frontend flow.</p><ul class='contribution-list'><li><strong>Backend Development:</strong> Designed the MySQL database schema and wrote the PHP scripts to handle user authentication, quiz logic, and XP calculations.</li><li><strong>Frontend Flow:</strong> Created the website wireframes and helped implement the user journey using HTML, CSS, and JavaScript.</li><li><strong>System Integration:</strong> Connected the frontend UI with the backend database to ensure real-time leaderboard updates.</li></ul>",
+        "fastFacts": [
+            { "label": "Role", "value": "Backend Developer, Wireframe Designer" },
+            { "label": "Tech Stack", "value": "PHP, MySQL, JS, HTML/CSS" },
+            { "label": "Platform", "value": "Web Browser" },
+            { "label": "Team Size", "value": "6" },
+            { "label": "Duration", "value": "14 Weeks" }
+        ],
+        "playLink": "https://quizzard.serv00.net/",
+        "gallery": [
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Leaderboard+UI",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Quiz+Interface",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Profile+Badges",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Database+Schema"
+        ]
+    }
   },
   {
     "id": "hrm-system",
@@ -273,117 +376,357 @@
     "description": "Built a Java SWING desktop app for managing employee records with Google GSON for database operations.",
     "mediaSource": "static/videos/hrm-system-preview.mp4",
     "poster": "imgs/gamethumbs/javathumb.PNG",
-    "detailsPage": "project-hrm-system.html",
-    "tags": ["Co-developer", "Java"]
+    "detailsPage": "subpages/view.html?id=hrm-system",
+    "tags": ["Co-developer", "Java"],
+    "detailedInfo": {
+        "heroImage": "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=HRM+System+UI",
+        "windowTitle": "[ hrm_admin.jar ]",
+        "overview": "<p>The HR Management System is a desktop application built with Java SWING. It is designed to help administrators efficiently manage workforce data.</p><p>Key features include adding new employee records, calculating payroll based on salary bands, and maintaining a persistent database using local JSON files via the Google GSON library. It simplifies the CRUD (Create, Read, Update, Delete) operations required for basic HR tasks.</p>",
+        "contributions": "<p>I co-developed the core logic and user interface.</p><ul class='contribution-list'><li><strong>Logic Implementation:</strong> Implemented the CRUD logic for employee management and the math logic for payroll calculations.</li><li><strong>Data Persistence:</strong> Integrated Google GSON to save and load employee data from local .json files, ensuring data isn't lost between sessions.</li><li><strong>UI/UX Flow:</strong> Designed the login screen and the navigation flow between the dashboard and management panels.</li></ul>",
+        "fastFacts": [
+            { "label": "Role", "value": "Co-Developer (Logic & UI)" },
+            { "label": "Tech Stack", "value": "Java (SWING), Google GSON" },
+            { "label": "Platform", "value": "Windows Desktop" },
+            { "label": "Team Size", "value": "5" },
+            { "label": "Duration", "value": "8 Weeks" }
+        ],
+        "playLink": "",
+        "gallery": [
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Admin+Dashboard",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Employee+Entry+Form",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Payroll+Calculation",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Login+Screen"
+        ]
+    }
   },
-  {
+{
     "id": "laptop-repair",
     "category": "software",
     "title": "Service Management System",
-    "description": "Built a desktop laptop repair management system in Python with Tkinter, featuring 4 user roles and using CSV for data storage",
+    "description": "A modern desktop app built with Python and CustomTkinter to manage a laptop repair shop. Features role-based dashboards and job tracking.",
     "mediaSource": "static/videos/hrm-system-preview.mp4",
     "poster": "imgs/gamethumbs/pythumb.PNG",
-    "detailsPage": "project-hrm-system.html",
-    "tags": ["Co-developer", "Python"]
+    "detailsPage": "subpages/view.html?id=laptop-repair",
+    "tags": ["Solo Developer", "Python"],
+    "detailedInfo": {
+        "heroImage": "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Python+GUI+Dashboard",
+        "windowTitle": "[ laptop_sms.py ]",
+        "overview": "<p>Abu Laptop Repair Service Management System is a modern desktop application designed to streamline operations for a repair shop. Built entirely in Python using CustomTkinter, it offers a fresh Dark Mode UI without the complexity of a database server.</p><p>The system features distinct workflows for 4 user roles: Admins (financial reports), Technicians (job updates), Receptionists (customer intake), and Customers (status tracking), all powered by local CSV storage.</p>",
+        "contributions": "<p>I revamped this diploma assignment as a solo project, coding the entire application from scratch.</p><ul class='contribution-list'><li><strong>Full Stack Development:</strong> Coded the GUI, logic, and data handling using Python.</li><li><strong>Data Management:</strong> Implemented a CSV-based storage system to handle user authentication and job tickets without an SQL database.</li><li><strong>UI/UX Design:</strong> Utilized CustomTkinter to create a clean, modern interface with role-specific dashboards.</li></ul>",
+        "fastFacts": [
+            { "label": "Role", "value": "Solo Developer" },
+            { "label": "Tech Stack", "value": "Python, CustomTkinter" },
+            { "label": "Platform", "value": "Windows Desktop" },
+            { "label": "Team Size", "value": "Solo" },
+            { "label": "Duration", "value": "1 Week" }
+        ],
+        "playLink": "https://github.com/Hajimbo04/Laptop-SMS",
+        "gallery": [
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Admin+Dashboard",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Job+Tracking+UI",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Login+Screen",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Receipt+Generation"
+        ]
+    }
   },
   {
     "id": "ajar-akademi",
     "category": "software",
     "title": "Ajar Akademi",
-    "description": "Developed a simple quiz web app with teacher and admin roles using PHP, MySQL, HTML, and JavaScript.",
+    "description": "Developed a simplified quiz web app with distinct teacher and admin roles using PHP, MySQL, HTML, CSS,and JavaScript.",
     "mediaSource": "static/videos/hrm-system-preview.mp4",
     "poster": "imgs/gamethumbs/ajarthumb.PNG",
-    "detailsPage": "project-hrm-system.html",
-    "tags": ["Project Manager", "Backend Developer"]
+    "detailsPage": "subpages/view.html?id=ajar-akademi",
+    "tags": ["Project Manager", "Backend Developer"],
+    "detailedInfo": {
+        "heroImage": "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Ajar+Akademi+Web",
+        "windowTitle": "[ ajar_akademi.php ]",
+        "overview": "<p>Ajar Akademi is a web-based educational platform serving as a simplified version of the 'Quizzard' project. It focuses on the core administrative side of e-learning, separating functions between Teachers and Admins.</p><p>Teachers can create and manage assessments, while Administrators oversee user accounts and system integrity. It was built to demonstrate a solid understanding of CRUD operations in a web environment.</p>",
+        "contributions": "<p>I led the backend development and initial design phase.</p><ul class='contribution-list'><li><strong>Backend Architecture:</strong> Designed and implemented the MySQL database and PHP logic for user roles and quiz data.</li><li><strong>Wireframing:</strong> Created the website wireframes to establish the user flow and interface layout.</li><li><strong>Project Management:</strong> Coordinated the 4-person team to ensure feature delivery over the 6-week timeline.</li></ul>",
+        "fastFacts": [
+            { "label": "Role", "value": "Backend Developer, PM" },
+            { "label": "Tech Stack", "value": "PHP, MySQL, HTML/CSS/JS" },
+            { "label": "Platform", "value": "Web Browser" },
+            { "label": "Team Size", "value": "4" },
+            { "label": "Duration", "value": "6 Weeks" }
+        ],
+        "playLink": "",
+        "gallery": [
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Teacher+Dashboard",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Quiz+Creation",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Admin+Panel",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Database+Structure"
+        ]
+    }
   },
   {
     "id": "cc1-event",
     "category": "others",
-    "title": "CC1 Event",
+    "title": "Online Game Tournament",
     "description": "Organized an online 'Stumble Guys' tournament for 44 participants; designed all marketing materials and served as the live event emcee.",
     "mediaSource": "is-this-your-video.mp4",
     "poster": "imgs/gamethumbs/cc1thumb.PNG",
-    "detailsPage": "project-cc1.html",
-    "tags": ["Event Manager", "Marketing"]
+    "detailsPage": "subpages/view.html?id=cc1-event",
+    "tags": ["Event Manager", "Marketing"],
+    "detailedInfo": {
+        "heroImage": "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Stumble+Guys+Tournament",
+        "windowTitle": "[ cc1_event_plan.pdf ]",
+        "overview": "<p>CC1 (Co-curricular Event 1) was a student-led initiative where we organized an online e-sports tournament for 'Stumble Guys'. The event brought together 44 participants for a night of competitive fun.</p><p>Hosted entirely on Discord and managed via Google Forms, the event required precise coordination to run a smooth knockout-style tournament live on stream.</p>",
+        "contributions": "<p>I wore multiple hats to ensure the event's success.</p><ul class='contribution-list'><li><strong>Event Management:</strong> Oversaw the 6-week planning phase and coordinated the 14-person committee during the live event.</li><li><strong>Marketing Design:</strong> Designed the promotional posters and social media assets using Canva.</li><li><strong>Live Operations:</strong> Served as the Emcee, engaging with participants and managing the flow of the tournament via OBS and Discord.</li></ul>",
+        "fastFacts": [
+            { "label": "Role", "value": "Event Manager, Emcee, Designer" },
+            { "label": "Tools", "value": "Discord, OBS, Canva" },
+            { "label": "Event Type", "value": "Online Tournament" },
+            { "label": "Team Size", "value": "14" },
+            { "label": "Duration", "value": "6 Weeks Planning" }
+        ],
+        "playLink": "",
+        "gallery": [
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Event+Poster",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Discord+Server+Setup",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Tournament+Bracket",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Live+Stream+Overlay"
+        ]
+    }
   },
-  {
+{
     "id": "cc2-event",
     "category": "others",
-    "title": "CC2 Event",
+    "title": "University Game Booth",
     "description": "Managed a 14-person team to run a physical university game booth, directing all operations and exceeding fundraising goals by 33%.",
     "mediaSource": "is-this-your-video.mp4",
     "poster": "imgs/gamethumbs/cc2thumb.PNG",
-    "detailsPage": "project-cc2.html",
-    "tags": ["Event Manager", "Marketing"]
+    "detailsPage": "subpages/view.html?id=cc2-event",
+    "tags": ["Event Manager", "Marketing"],
+    "detailedInfo": {
+        "heroImage": "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Game+Booth+Event",
+        "windowTitle": "[ cc2_report.pdf ]",
+        "overview": "<p>For our Co-Curricular Project, I managed a 14-person team to develop and run a physical game booth on campus. The goal was to engage students and raise funds through interactive gaming experiences.</p><p>We featured a mix of digital and traditional games, including 'Taiko no Tatsujin' and 'Batu Seremban'. Through strategic planning and merchandise sales, we successfully raised RM200, exceeding our initial target of RM150 by 33%.</p>",
+        "contributions": "<p>As the Event Manager, I directed all operational aspects of the booth.</p><ul class='contribution-list'><li><strong>Operations Management:</strong> Directed the game selection, prize management, and merchandise inventory.</li><li><strong>Team Leadership:</strong> Managed the shift roster and task delegation for 14 committee members over the 5-day event.</li><li><strong>Financial Success:</strong> Oversaw the budget and sales strategy, resulting in a 33% surplus over our fundraising goal.</li></ul>",
+        "fastFacts": [
+            { "label": "Role", "value": "Event Manager" },
+            { "label": "Tools", "value": "Google Sheets, Canva" },
+            { "label": "Event Type", "value": "Physical Game Booth" },
+            { "label": "Team Size", "value": "14" },
+            { "label": "Duration", "value": "7 Weeks Planning, 5 Days Event" }
+        ],
+        "playLink": "",
+        "gallery": [
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Booth+Setup",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Taiko+Gaming+Area",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Merchandise",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Team+Photo"
+        ]
+    }
   },
   {
     "id": "internship-talk",
     "category": "others",
-    "title": "Samsung Internship Talk Event",
+    "title": "Samsung Internship Talk",
     "description": "Led a 14-person team to plan and execute a professional internship talk with Samsung, overseeing marketing, PR, and event-day logistics.",
     "mediaSource": "is-this-your-video.mp4",
     "poster": "imgs/gamethumbs/samsungthumb.PNG",
-    "detailsPage": "project-intern-talk.html",
-    "tags": ["Event Manager"]
+    "detailsPage": "subpages/view.html?id=internship-talk",
+    "tags": ["Event Manager"],
+    "detailedInfo": {
+        "heroImage": "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Samsung+Talk+Event",
+        "windowTitle": "[ samsung_event_plan.doc ]",
+        "overview": "<p>As part of the Workplace Professional Skills module, I led a team of 14 to organize a high-profile internship talk featuring guest speakers from Samsung Malaysia's HR and Marketing departments.</p><p>The event was designed to prepare students for the corporate world, offering insights into internship applications and industry expectations.</p>",
+        "contributions": "<p>I served as the Event Manager, overseeing the entire project lifecycle.</p><ul class='contribution-list'><li><strong>Project Leadership:</strong> Oversaw all project streams including Public Relations (speaker invitations), Marketing, and Logistics.</li><li><strong>Quality Assurance:</strong> Ensured all project deliverables met strict module requirements.</li><li><strong>Content Creation:</strong> Utilized Photoshop and DaVinci Resolve to produce professional marketing materials and video montages.</li></ul>",
+        "fastFacts": [
+            { "label": "Role", "value": "Event Manager" },
+            { "label": "Tools", "value": "Google Forms, Photoshop, Resolve" },
+            { "label": "Event Type", "value": "Professional Talk" },
+            { "label": "Team Size", "value": "14" },
+            { "label": "Duration", "value": "9 Weeks Planning" }
+        ],
+        "playLink": "",
+        "gallery": [
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Guest+Speakers",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Event+Hall",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Marketing+Poster",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Q&A+Session"
+        ]
+    }
   },
   {
     "id": "scoop-n-go",
     "category": "others",
     "title": "Entrepreneurship Booth",
-    "description": "Assisted as project manager and marketing lead, designing posters and helping the team exceed the fundraising target by 100%.",
+    "description": "Assisted as project manager and marketing lead for a 'Spin-the-Wheel' booth, helping the team exceed the fundraising target by 100%.",
     "mediaSource": "static/videos/spin-wheel-preview.mp4",
     "poster": "imgs/gamethumbs/scoopthumb.PNG",
-    "detailsPage": "project-spin-wheel.html",
-    "tags": ["Assistant Event Manager", "Marketing"]
+    "detailsPage": "subpages/view.html?id=scoop-n-go",
+    "tags": ["Assistant Event Manager", "Marketing"],
+    "detailedInfo": {
+        "heroImage": "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Spin+The+Wheel+Booth",
+        "windowTitle": "[ sales_report.xlsx ]",
+        "overview": "<p>For the Fundamentals of Entrepreneurship module, we launched 'Scoop-n-Go', a pop-up booth featuring a 'Spin-the-Wheel' concept to drive sales.</p><p>By leveraging a strategic location and optimizing our prize-to-price ratio, we created a high-traffic stall that smashed our initial fundraising goal of RM150, achieving RM307 in revenue in a single day.</p>",
+        "contributions": "<p>I served as the Assistant Project Manager and Marketing Lead.</p><ul class='contribution-list'><li><strong>Business Strategy:</strong> Co-developed the business concept, focusing on location analysis and competitive pricing.</li><li><strong>Marketing Design:</strong> Designed eye-catching marketing posters using Canva to attract footfall.</li><li><strong>Sales Execution:</strong> Helped manage the booth operations, ensuring high energy and customer engagement throughout the day.</li></ul>",
+        "fastFacts": [
+            { "label": "Role", "value": "Assistant Manager, Marketing Lead" },
+            { "label": "Tools", "value": "Canva" },
+            { "label": "Event Type", "value": "Sales Booth" },
+            { "label": "Revenue", "value": "RM307 (200% of Target)" },
+            { "label": "Duration", "value": "1 Day" }
+        ],
+        "playLink": "",
+        "gallery": [
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=The+Booth",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Spin+The+Wheel",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Marketing+Poster",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Happy+Customers"
+        ]
+    }
   },
-  {
+{
     "id": "psa-video",
     "category": "others",
-    "title": "PSA Video",
-    "description": "Served as the primary actor and narrator for a PSA video educating viewers on the dangers of oversharing personal information on social media.",
+    "title": "Social Media PSA",
+    "description": "Served as the primary actor and narrator for a high-production PSA video educating viewers on the dangers of oversharing personal information.",
     "mediaSource": "is-this-your-video.mp4",
     "poster": "imgs/gamethumbs/avtthumb.PNG",
-    "detailsPage": "project-psa-video.html",
-    "tags": ["Actor"]
+    "detailsPage": "subpages/view.html?id=psa-video",
+    "tags": ["Actor", "Narrator"],
+    "detailedInfo": {
+        "heroImage": "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=PSA+Video+Production",
+        "windowTitle": "[ psa_project.mp4 ]",
+        "overview": "<p>This Social Media Oversharing PSA is a narrative-driven video produced to raise awareness about digital safety. The story follows a young man who finds a 'girlfriend' through a dating app, only to discover she is a scammer who blackmails him after he shares private photos.</p><p>The video serves as a cautionary tale about the real-world consequences of sharing too much personal information with strangers online.</p>",
+        "contributions": "<p>I served as the primary talent and creative assistant.</p><ul class='contribution-list'><li><strong>Acting:</strong> Played the lead role, conveying the emotional arc from excitement to dread.</li><li><strong>Voice-Over:</strong> Provided the narration to guide the educational message.</li><li><strong>Production Support:</strong> Assisted with scriptwriting and post-production editing using DaVinci Resolve and Audacity.</li></ul>",
+        "fastFacts": [
+            { "label": "Role", "value": "Actor, Narrator, Script Asst" },
+            { "label": "Tools", "value": "DaVinci Resolve, Audacity" },
+            { "label": "Format", "value": "Video Production" },
+            { "label": "Team Size", "value": "4" },
+            { "label": "Duration", "value": "8 Weeks" }
+        ],
+        "playLink": "",
+        "gallery": [
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Scene+Screenshot",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Editing+Timeline",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Script+Reading",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Behind+The+Scenes"
+        ]
+    }
   },
   {
     "id": "movie-brochure",
     "category": "others",
-    "title": "Movie Brochure",
-    "description": "Designed a professional, print-ready movie brochure for Howl's Moving Castle using Adobe Photoshop.",
+    "title": "Movie Brochure Design",
+    "description": "Designed a professional, print-ready tri-fold brochure for 'Howl's Moving Castle' using Adobe Photoshop.",
     "mediaSource": "is-this-your-video.mp4",
     "poster": "imgs/gamethumbs/brochurethumb.PNG",
-    "detailsPage": "subpages/movie-brochure.html",
-    "tags": ["Designer"]
+    "detailsPage": "subpages/view.html?id=movie-brochure",
+    "tags": ["Graphic Designer"],
+    "detailedInfo": {
+        "heroImage": "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Brochure+Mockup",
+        "windowTitle": "[ howls_brochure.psd ]",
+        "overview": "<p>This project involved designing a professional, print-ready tri-fold brochure for the Studio Ghibli classic <em>Howl's Moving Castle</em>. The design aesthetic captures the whimsical and vibrant style of the film using a scrapbook-collage technique.</p><p>The layout features a 'Magnum Opus' timeline of Hayao Miyazaki's career on the outer spread, while the inner folds provide deep dives into the characters Howl and Sophie, framed by film strips and torn paper effects.</p>",
+        "contributions": "<p>I was the sole Graphic Designer for this 12-week project.</p><ul class='contribution-list'><li><strong>Layout Design:</strong> structured the tri-fold layout to balance information flow between the 'Director's Timeline' and 'Character Bios'.</li><li><strong>Visual Composition:</strong> Created a cohesive aesthetic using film reel motifs, cloud textures, and vibrant Ghibli blue tones.</li><li><strong>Print Readiness:</strong> Ensured all assets were high-resolution and correctly formatted for professional printing.</li></ul>",
+        "fastFacts": [
+            { "label": "Role", "value": "Graphic Designer" },
+            { "label": "Tools", "value": "Adobe Photoshop" },
+            { "label": "Format", "value": "Tri-Fold Brochure" },
+            { "label": "Team Size", "value": "Solo" },
+            { "label": "Duration", "value": "12 Weeks" }
+        ],
+        "playLink": "",
+        "gallery": [
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Front+Cover+Mockup",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Inside+Spread+Characters",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Back+Spread+Timeline",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Print+Ready+Flat"
+        ]
+    }
   },
   {
     "id": "retail-analysis",
     "category": "others",
-    "title": "Retail Customer Behavior Analysis",
-    "description": "Analyzed a large retail dataset using R, identifying correlations between customer payment methods and product ratings.",
+    "title": "Retail Behavior Analysis",
+    "description": "Analyzed a large retail dataset using R to identify statistically significant correlations between payment methods and customer ratings.",
     "mediaSource": "static/videos/retail-analysis-preview.mp4",
-    "poster": "imgs/gamethumbs/analysisthumb.PNG",
-    "detailsPage": "project-retail-analysis.html",
-    "tags": ["Data Analyst"]
+    "poster": "imgs/gamethumbs/retailthumb.PNG",
+    "detailsPage": "subpages/view.html?id=retail-analysis",
+    "tags": ["Data Analyst"],
+    "detailedInfo": {
+        "heroImage": "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=RStudio+Data+Analysis",
+        "windowTitle": "[ retail_analysis.R ]",
+        "overview": "<p>This project involved a deep statistical analysis of a large retail dataset to determine factors influencing customer satisfaction. Using RStudio, I built logistic regression models to quantify the relationship between payment methods and customer ratings.</p><p>The findings revealed that payment method is a highly statistically significant predictor: Cash users showed a higher propensity for 'High' ratings (p-value 0.0002), while Debit and PayPal users had significantly lower odds of leaving positive reviews.</p>",
+        "contributions": "<p>I performed the end-to-end data analysis pipeline.</p><ul class='contribution-list'><li><strong>Statistical Modeling:</strong> Calculated log-odds coefficients and p-values to prove the significance of payment methods on ratings.</li><li><strong>Model Evaluation:</strong> Used Null Deviance vs. Residual Deviance and AIC metrics to validate the model's explanatory power.</li><li><strong>Data Visualization:</strong> Created stacked and dodged bar charts using ggplot2 to visualize the rating distribution across different payment types.</li></ul>",
+        "fastFacts": [
+            { "label": "Role", "value": "Data Analyst" },
+            { "label": "Tools", "value": "RStudio, ggplot2, Tidyverse" },
+            { "label": "Method", "value": "Logistic Regression" },
+            { "label": "Team Size", "value": "4" },
+            { "label": "Duration", "value": "6 Weeks" }
+        ],
+        "playLink": "",
+        "gallery": [
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Payment+Method+Chart",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Residual+Deviance+Plot",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=R+Code+Snippet",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Summary+Statistics"
+        ]
+    }
   },
-  {
+{
     "id": "event-booking-ux",
     "category": "others",
-    "title": "Event Booking System UI/UX",
-    "description": "Designed a high-fidelity event booking app prototype in Figma, including full user journey from browsing to checkout.",
+    "title": "Event Booking App UI/UX",
+    "description": "Designed a high-fidelity event booking app prototype in Figma, featuring a comprehensive user journey from event discovery to ticket purchase.",
     "mediaSource": "static/videos/figma-event-preview.mp4",
     "poster": "imgs/gamethumbs/figmathumb.PNG",
-    "detailsPage": "project-event-booking-ux.html",
-    "tags": ["UI/UX Designer"]
+    "detailsPage": "subpages/view.html?id=event-booking-ux",
+    "tags": ["UI/UX Designer"],
+    "detailedInfo": {
+        "heroImage": "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Figma+Prototype+Showcase",
+        "windowTitle": "[ event_app.fig ]",
+        "overview": "<p>This project focused on the UI/UX design of a general event booking mobile application. The goal was to create a seamless user experience that allows users to easily discover local events, view details, and secure tickets.</p><p>The high-fidelity prototype covers the complete user journey, starting from the Home Feed and Search, moving through Event Details, and concluding with a streamlined Checkout process.</p>",
+        "contributions": "<p>I served as the UI/UX Designer within a team of 4.</p><ul class='contribution-list'><li><strong>Prototyping:</strong> Created a clickable high-fidelity prototype in Figma to demonstrate the full application flow.</li><li><strong>Design System:</strong> Established a consistent design language, including a standardized color palette, typography hierarchy, and a library of reusable components (buttons, cards, inputs) to ensure visual coherence.</li><li><strong>User Flow:</strong> Mapped out the user journey from browsing to payment confirmation.</li></ul>",
+        "fastFacts": [
+            { "label": "Role", "value": "UI/UX Designer" },
+            { "label": "Tools", "value": "Figma" },
+            { "label": "Platform", "value": "Mobile App Prototype" },
+            { "label": "Team Size", "value": "4" },
+            { "label": "Duration", "value": "6 Weeks" }
+        ],
+        "playLink": "",
+        "gallery": [
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Home+Screen+UI",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Event+Details+Page",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Checkout+Flow",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Component+Library"
+        ]
+    }
   },
   {
     "id": "2d-level-design",
     "category": "others",
     "title": "2D Level Design",
-    "description": "Designed a narrative-driven 2D Unity level focusing on environmental storytelling and emotional pacing.",
+    "description": "Designed a narrative-driven 2D Unity level focusing on environmental storytelling across three distinct biomes.",
     "mediaSource": "static/videos/narrative-level-preview.mp4",
     "poster": "imgs/gamethumbs/2dlevelthumb.PNG",
-    "detailsPage": "project-narrative-level.html",
-    "tags": ["Level Designer", "Narrative Designer"]
+    "detailsPage": "subpages/view.html?id=2d-level-design",
+    "tags": ["Level Designer", "Narrative Designer"],
+    "detailedInfo": {
+        "heroImage": "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Level+Design+Overview",
+        "windowTitle": "[ unity_scene_view.exe ]",
+        "overview": "<p>This project is a dedicated study in 2D Level Design and Environmental Storytelling. It follows the journey of a protagonist travelling across the world to rescue her kidnapped husband.</p><p>The level takes the player through a visual progression of three distinct biomes: starting in a calm Beach & Forest, traversing the treacherous Plains & Cliffs (leading to a Castle), and descending into a dangerous Underground Lava zone.</p>",
+        "contributions": "<p>I focused purely on the level architecture and visual composition.</p><ul class='contribution-list'><li><strong>Environmental Storytelling:</strong> Designed the level layout to visually narrate the journey from safety (beach) to danger (lava) without dialogue.</li><li><strong>Tilemap Design:</strong> Utilized Unity's Tilemap system to paint complex, layered 2D environments.</li><li><strong>Scene Composition:</strong> Managed the placement of assets and background layers to create depth and atmosphere across the three unique zones.</li></ul>",
+        "fastFacts": [
+            { "label": "Role", "value": "Level Designer" },
+            { "label": "Tools", "value": "Unity, Tilemap" },
+            { "label": "Format", "value": "2D Side-Scroller" },
+            { "label": "Team Size", "value": "3" },
+            { "label": "Duration", "value": "12 Weeks" }
+        ],
+        "playLink": "",
+        "gallery": [
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Biome+1:+Beach",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Biome+2:+Castle+Cliffs",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Biome+3:+Lava+Core",
+            "https://placehold.co/1280x720/2a2a2a/d4d4d4?text=Unity+Grid+View"
+        ]
+    }
   }
 ]
