@@ -343,7 +343,8 @@ function initParticles() {
 }
 
 function initDraggableWindows() {
-    const allWindows = document.querySelectorAll('main .window');
+    // UPDATED: Now selects ALL windows except the modal, regardless of parent container
+    const allWindows = document.querySelectorAll('.window:not(#modal-window)');
     
     allWindows.forEach(windowEl => {
         const titleBar = windowEl.querySelector('.window-titlebar');
@@ -647,7 +648,7 @@ function applyUrlPreferences() {
                     </div>`;
             }
             else if (roleParam === 'gamedev') { 
-                roleDescription = ".";
+                roleDescription = "";
                 coreSkillsList = "";
                 
                 skillsHTML = `
@@ -708,7 +709,7 @@ function applyUrlPreferences() {
                 break;
             
             case 'gamedev':
-                newTitle = "I'm a <span style='color: var(--color-accent)'>Gameplay Programmer</span> | Unity (C#), Unreal (C++) & Technical Design";
+                newTitle = "I'm a <span style='color: var(--color-accent)'>Gameplay Programmer</span> | Unity (C#), Unreal (BP) & Technical Design";
                 newWindowName = "[ gameplay_prog.cpp ]";
                 targetFilter = "academic"; 
                 newFocus = `I bring worlds to life through code. I specialize in <span style="color: #00ff00;">Gameplay Systems</span>, <span style="color: #00ff00;">Character Mechanics</span>, and <span style="color: #00ff00;">AI Behavior</span> using Unity and Unreal Engine.`;

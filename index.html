@@ -19,7 +19,6 @@
             </div>
             <ul>
                 <li><a href="index.html" class="active">[ Home ]</a></li>
-                <li><a href="projects.html">[ Projects ]</a></li>
                 <li><a href="about.html">[ About ]</a></li>
                 <li><a href="contact.html">[ Contact ]</a></li>
             </ul>
@@ -29,7 +28,7 @@
 
     <div id="page-content-wrapper">
 
-    <!-- main content -->
+    <!-- TOP SECTION: Restricted width (good for reading text) -->
     <main class="container">
         <section class="hero-section">
             <div class="window pixel-border">
@@ -43,7 +42,7 @@
                 </div>
                 <div class="window-content">
                     <h1>Hi, I'm Hazim.</h1>
-                    <h2>I'm a Technical Generalist | Game Development, Software Engineering, Data Analysis, Creative Production</h2>
+                    <h2>I'm a Technical Generalist | Game Development, Front-end, Data Analysis, Creative Production</h2>
                 </div>
             </div>
         </section>
@@ -62,7 +61,7 @@
                     <div style="font-family: inherit; line-height: 1.5;">
                         <p>> CURRENT_STATUS: <span style="color: #00ff00;">[ OPEN_TO_WORK ]</span></p>
                         <br>
-                        <p>> FOCUS: <span id="about-focus">I build engaging systems and experiences across multiple domains. 
+                        <p>> FOCUS: <span id="about-focus">
                             I specialize in <span style="color: #00ff00;">C# Gameplay Programming</span> and <span style="color: #00ff00;">Level Design</span>, 
                             while also developing <span style="color: #00ff00;">Software Applications</span>, <span style="color: #00ff00;">Data Analysis & Simulations</span>, 
                             and <span style="color: #00ff00;">UI/UX Design</span>.</span>
@@ -77,25 +76,34 @@
             </div>
         </section>
     </main> 
+    <!-- END OF TOP SECTION -->
 
-    <section class="all-projects-carousel">
-        <div class="container">
-            <div class="carousel-header-wrapper">
-                <button id="carousel-prev" class="carousel-btn btn-pixel">&lt;</button>
-                <a href="projects.html" class="projects-link">
-                    <h2>
-                        <span class="default-text">[ Some of my Projects ]</span>
-                        <span class="hover-text">[ View All Projects ]</span>
-                    </h2>
-                </a>
-                <button id="carousel-next" class="carousel-btn btn-pixel">&gt;</button>
-            </div>
-        </div>
-
-        <div class="carousel-container">
-            <div class="carousel-track"></div> 
-        </div>
-    </section> 
+    <!-- BOTTOM SECTION: Wide width (good for grid display) -->
+    <!-- We reuse 'container' class for margins but override max-width inline -->
+    <div class="container" style="max-width: 1600px; width: 95%;">
+        <section class="projects-explorer">
+            <div class="window pixel-border">
+                <div class="window-titlebar">
+                    <span>[ C:\Projects ]</span>
+                    <div class="window-buttons">
+                        <span class="window-btn">_</span>
+                        <span class="window-btn">□</span>
+                        <span class="window-btn">X</span>
+                    </div>
+                </div>
+                <div class="window-content">
+                    <div class="filter-buttons">
+                        <button class="btn-pixel filter-btn active" data-filter="all">[ Show All ]</button>
+                        <button class="btn-pixel filter-btn" data-filter="academic">[ Academic Games ]</button>
+                        <button class="btn-pixel filter-btn" data-filter="gamejam">[ Game Jams ]</button>
+                        <button class="btn-pixel filter-btn" data-filter="software">[ Software ]</button>
+                        <button class="btn-pixel filter-btn" data-filter="others">[ Others ]</button>
+                    </div>
+                    <div class="project-grid" id="project-grid-container"></div> 
+                </div> 
+            </div> 
+        </section>
+    </div>
 
     <footer class="main-footer">
         <div class="social-links">
